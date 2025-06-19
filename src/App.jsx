@@ -1,12 +1,9 @@
+import React from "react";
 import "./App.css";
-import Navbar from "./modules/Navbar";
+import { Layout } from "./features/Layout";
 
 function App() {
-  return (
-    <>
-      <Navbar />
-    </>
-  );
+  return <Layout />;
 }
 
 export default App;
