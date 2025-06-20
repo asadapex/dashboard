@@ -7,7 +7,15 @@ import {
   OverviewIcon,
   TicketsIcon,
 } from "../assets/icons";
-import { Agents, Articles, Contacts, Ideas, Overview, Tickets } from "../pages";
+import {
+  Agents,
+  Articles,
+  Contacts,
+  Ideas,
+  Overview,
+  Tickets,
+  TicketCreate,
+} from "../pages";
 
 export const paths = {
   overview: "/",
@@ -16,6 +24,7 @@ export const paths = {
   contacts: "/contacts",
   agents: "/agents",
   articles: "/articles",
+  ticketsCreate: "/tickets/create",
 };
 
 export const navList = [
@@ -87,5 +96,10 @@ export const pageRoueteList = [
     id: 6,
     path: paths.articles,
     element: <Articles />,
+  },
+  {
+    id: 7,
+    path: paths.ticketsCreate,
+    element: <TicketCreate />,
   },
 ];

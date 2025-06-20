@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div className="flex items-center justify-between mb-[58px]">
       <strong className="font-bold text-[24px] text-[#252733]">
-        {navList.find((item) => item.path == pathname).title}
+        {navList.find((item) => item.path == pathname)?.title}
       </strong>
       <div className="flex items-center gap-[24px]">
         <SearchIcon />
